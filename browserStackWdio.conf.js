@@ -36,7 +36,19 @@ exports.config = {
     },
 
     // BrowserStack specific configurations
-    services: ['browserstack'],
+    // services: ['browserstack'],
+    services: [
+        ['browserstack', {
+            testObservability: true,
+            testObservabilityOptions: {
+                user: 'YOUR_USER_NAME' || process.env.BROWSERSTACK_USERNAME,
+                key: 'YOUR_KEY' || process.env.BROWSERSTACK_ACCESS_KEY,
+                projectName: 'WDIO Projexct',
+                buildName: 'WDIO build',
+                buildTag: 'Any build tag goes here. For e.g. ["Tag1","Tag2"]'
+            },
+        }]
+    ],
 
     // Reporting options (if needed)
     reporters: ['spec'],

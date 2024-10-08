@@ -7,4 +7,6 @@
         - export BROWSERSTACK_USERNAME=YOUR_USER_NAME
         - export BROWSERSTACK_ACCESS_KEY=YOUR_ACCESS_KEY
         
-    - run 'npx wdio browserStackWdio.conf.js'# WDIO_Assignment
+    - run 'npx wdio browserStackWdio.conf.js'
+
+- Integrated with SDK
