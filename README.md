@@ -1,3 +1,4 @@
+- To install dependencies: 'npm install'
 - To run test locally: 'npx wdio run wdio.conf.js'
 
 - To run on browserstack:
