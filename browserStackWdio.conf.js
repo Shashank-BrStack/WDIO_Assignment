@@ -51,5 +51,13 @@ exports.config = {
     ],
 
     // Reporting options (if needed)
-    reporters: ['spec'],
+    reporters: ['spec',
+        ['junit', {
+            outputDir: 'junit-reports',
+            outputFileFormat: function(options) { // optional
+                // return `results-${new Date().getTime()}.xml`
+                return `results-${options.cid}.xml`
+            }
+        }]
+    ],
 };
